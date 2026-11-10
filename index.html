@@ -22,7 +22,7 @@ img { max-width: 100%; }
 <title>Nejdřív domov, ne levná práce</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Source+Sans+3:wght@400;600;700&family=Pixelify+Sans:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Source+Sans+3:wght@400;600;700&display=swap">
 <style>
 /* Jedna stránka po kapitolách, mobil na prvním místě; lišta nahoře posouvá na kapitoly */
 :root {
@@ -38,7 +38,7 @@ img { max-width: 100%; }
   --foot-bg: #f7f7f7;   /* = pozadí světlého loga */
   --f-display: "Archivo", "Arial Black", system-ui, sans-serif;
   --f-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-pixel: "Pixelify Sans", "Courier New", monospace;
+  --f-pixel: "Archivo", "Arial Black", system-ui, sans-serif;  /* čísla a štítky stejným písmem jako nadpisy */
   --head-h: 64px;
 }
 @media (prefers-color-scheme: dark) {
@@ -150,7 +150,7 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; 
 /* ===== 10 důvodů ===== */
 .points { list-style: none; margin: 0; padding: 0; display: grid; gap: 0 48px; }
 .points li { border-top: 2px solid var(--ink); padding-block: 16px; display: grid; grid-template-columns: 44px 1fr; gap: 10px; min-width: 0; }
-.points li .n { font-family: var(--f-pixel); font-weight: 700; font-size: 1.4rem; color: var(--red); line-height: 1.1; }
+.points li .n { font-family: var(--f-pixel); font-weight: 900; font-variant-numeric: tabular-nums; font-size: 1.4rem; color: var(--red); line-height: 1.1; }
 .points li h3 a { color: var(--ink); text-decoration: none; }
 .points li h3 a:hover { text-decoration: underline; text-decoration-color: var(--red); }
 .points li p { color: var(--muted); margin-top: 4px; }
@@ -203,7 +203,7 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; 
 .oblast-label { font-family: var(--f-pixel); font-weight: 700; color: var(--red); letter-spacing: .06em; text-transform: uppercase; font-size: .9rem; }
 .dem-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; }
 .dem { display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding-block: 22px; border-top: 2px solid var(--line); }
-.dem .n { font-family: var(--f-pixel); font-weight: 700; font-size: 1.4rem; color: var(--blue); line-height: 1; }
+.dem .n { font-family: var(--f-pixel); font-weight: 900; font-variant-numeric: tabular-nums; font-size: 1.4rem; color: var(--blue); line-height: 1; }
 .dem .body { display: grid; gap: 10px; min-width: 0; }
 .dem h3 { font-size: 1.2rem; }
 .example { background: var(--bg-alt); border: 2px dashed var(--line); padding: 12px 14px; font-size: .98rem; }
@@ -215,7 +215,7 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; 
 .arg { display: grid; gap: 18px; padding-block: 28px; border-top: 2px solid var(--line); align-items: start; }
 .arg .body { display: grid; gap: 12px; max-width: 68ch; min-width: 0; }
 .arg h3 { font-size: 1.35rem; display: flex; gap: 12px; align-items: baseline; }
-.arg h3 .n { font-family: var(--f-pixel); color: var(--red); font-size: 1.25rem; flex: none; }
+.arg h3 .n { font-family: var(--f-pixel); font-weight: 900; font-variant-numeric: tabular-nums; color: var(--red); font-size: 1.25rem; flex: none; }
 .arg .ill { max-width: 520px; }
 
 /* ===== Další opatření ===== */

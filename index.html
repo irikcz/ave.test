@@ -260,7 +260,11 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
   section { padding-block: 64px; }
   .hero { padding-block: 0 64px; }
   .hero .wrap { grid-template-columns: 1.1fr .9fr; gap: 48px; padding-top: 28px; align-items: start; }
-  .banner img { height: 260px; max-height: none; object-position: center top; }
+  /* desktop: celý obrázek (věže i most) zmenšený do nižšího pruhu, okraje se rozplynou do bílé */
+  .banner { display: flex; justify-content: center; }
+  .banner img { width: auto; height: 320px; max-height: none; max-width: 100%; object-fit: contain;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 9%, #000 91%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 9%, #000 91%, transparent 100%); }
   .sign-box { padding: 28px; }
   .risks, .src-groups { grid-template-columns: 1fr 1fr; }
   .points { grid-template-columns: 1fr 1fr; }

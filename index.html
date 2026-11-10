@@ -68,6 +68,7 @@ body {
 section { padding-block: 44px; }
 [id] { scroll-margin-top: calc(var(--head-h) + 12px); }
 .alt { background: var(--bg-alt); }
+.sep { border-top: 2px solid var(--line); }
 h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.12; margin: 0; }
 h1 { font-size: clamp(2rem, 8vw, 3.25rem); font-weight: 900; }
 h2 { font-size: clamp(1.55rem, 6vw, 2.25rem); font-weight: 900; }
@@ -502,7 +503,7 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
   </section>
 
   <!-- ARGUMENTY -->
-  <section class="alt" id="argumenty">
+  <section class="sep" id="argumenty">
     <div class="wrap">
       <div class="sec-head">
         <h2>Podrobně, bod po bodu</h2>
@@ -591,7 +592,7 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
   </section>
 
   <!-- ZDROJE -->
-  <section id="zdroje">
+  <section class="alt" id="zdroje">
     <div class="wrap">
       <div class="sec-head">
         <h2>Zdroje</h2>

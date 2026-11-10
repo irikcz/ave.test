@@ -264,8 +264,8 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
   .hero { padding-block: 0 64px; }
   .hero .wrap { grid-template-columns: 1.1fr .9fr; gap: 48px; padding-top: 28px; align-items: start; }
   /* desktop: široká panorama přes celou šířku, celá výška (věže i most) */
-  .banner img { height: 24vw; max-height: min(460px, calc(100vh - 300px)); object-position: center 25%; }  /* ořez hlavně spodní vody */
-  .sign-box { padding: 28px; }
+  .banner img { height: 24vw; max-height: min(460px, calc(100vh - 470px)); min-height: 220px; object-position: center 28%; }  /* ořez nebe nahoře a vody dole, aby byl celý rámeček s podpisem vidět */
+  .sign-box { padding: 24px 28px; gap: 12px; }
   .hero .share { grid-column: 1 / -1; margin-top: 8px; }
   .hero .share-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
   .risks, .src-groups { grid-template-columns: 1fr 1fr; }

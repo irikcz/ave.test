@@ -135,7 +135,6 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; 
 .chapters a:hover { border-left-color: var(--red); background: var(--bg-alt); }
 
 .chapters a.active { border-left-color: var(--red); background: var(--bg-alt); }
-.priloha-text { color: var(--muted); max-width: 68ch; }
 
 @media (min-width: 1120px) {
   .menu-btn { display: none; }
@@ -336,7 +335,6 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
       <a href="#co-vlada-chysta">Co vláda chystá</a>
       <a href="#rizika">Rizika</a>
       <a href="#petice">Požadavky</a>
-      <a href="#priloha">Příloha</a>
       <a href="#zdroje">Zdroje</a>
       <a href="#o-nas">O nás</a>
     </nav>
@@ -382,7 +380,7 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
             <div class="goal-row"><span class="goal">15&nbsp;000</span><span class="goal-label">podpisů je náš cíl</span></div>
             <a class="btn" href="#podpis" data-petition>Podepsat petici</a>
             <p class="goal-note"><b>Proč právě 15 000?</b> Tolik podpisů je podle současných pravidel potřeba, aby se peticí musel zabývat petiční výbor Poslanecké sněmovny.</p>
-            <p>Petici podepisujete elektronicky na oficiálním petičním webu. Trvá to minutu.</p>
+            <p>Petici podepisujete elektronicky na Portálu občana (portal.gov.cz). Trvá to minutu.</p>
           </div>
       </div>
         <div class="share">
@@ -524,16 +522,6 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
     </div>
   </section>
 
-  <!-- PŘÍLOHA -->
-  <section class="sep" id="priloha">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2>Příloha petice</h2>
-      </div>
-      <p class="priloha-text">Zde bude obsah přílohy petice.</p>
-    </div>
-  </section>
-
   <!-- ZDROJE -->
   <section class="alt" id="zdroje">
     <div class="wrap">
@@ -650,8 +638,8 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
 <script>
 /* ===== NASTAVENÍ – doplňte ===== */
 const PETICE = {
-  odkaz: "",          // odkaz na oficiální elektronický podpis petice, např. "https://..."
-  web: "",            // adresa této webovky pro sdílení (prázdné = aktuální adresa)
+  odkaz: "https://portal.gov.cz/e-petice/2200-nejdriv-domov-ne-levna-prace-petice-za-zastaveni-dovozu-pracovni-sily-z-mimoevropskych-zemi",          // odkaz na oficiální elektronický podpis petice, např. "https://..."
+  web: "https://irikcz.github.io/ave.test/",            // adresa této webovky pro sdílení (prázdné = aktuální adresa)
   textSdileni: "Nejdřív domov, ne levná práce. Podepište petici proti zvyšování kvót pro dovoz pracovní síly z mimoevropských zemí."
 };
 /* ================================= */

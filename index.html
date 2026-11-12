@@ -317,12 +317,14 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
 @media (min-width: 760px) {
   section { padding-block: 64px; }
   .hero { padding-block: 0 64px; }
-  .hero .wrap { grid-template-columns: 1.1fr .9fr; gap: 48px; padding-top: 28px; align-items: start; }
+  .hero .wrap { grid-template-columns: 1fr 1fr; gap: 40px; padding-top: 24px; align-items: start; }
   /* desktop: široká panorama přes celou šířku, celá výška (věže i most) */
   /* desktop: přes celou šířku, ořez nebe nahoře a části vody dole; výška hlídá, aby byl vidět celý rámeček s podpisem */
-  .banner { height: 24vw; max-height: min(460px, calc(100vh - 490px)); min-height: 200px; }
+  .banner { height: 24vw; max-height: min(460px, calc(100vh - 445px)); min-height: 220px; }
   .banner.game { height: auto; aspect-ratio: 2170 / 704; max-height: calc(100vh - 90px); min-height: 0; }
-  .sign-box { padding: 20px 26px; gap: 10px; }
+  .sign-box { padding: 18px 26px; gap: 10px; }
+  .sign-box .goal-row { flex-wrap: nowrap; align-items: baseline; gap: 12px; }
+  .sign-box .goal-row .goal-label { font-size: .95rem; }
   .sign-box p, .goal-note { font-size: .93rem; line-height: 1.5; }
   .hero .share { grid-column: 1 / -1; margin-top: 8px; }
   .hero .share-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
@@ -470,15 +472,15 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
         <h2>Rizika dovozu levné pracovní síly</h2>
       </div>
       <ol class="risks">
-        <li><span class="rn">1</span><div><b>Brzdí modernizaci</b><span>Firmy místo investic do strojů a automatizace kupují levnou lidskou práci. Ekonomika se modernizuje pomaleji, produktivita i mzdy stagnují. Historické potvrzení: po vyloučení mexických dělníků v USA (1964) farmy okamžitě masivně mechanizovaly sklizeň.</span></div></li>
+        <li><span class="rn">1</span><div><b>Brzdí modernizaci</b><span>Firmy místo investic do strojů a automatizace kupují levnou lidskou práci. Ekonomika se modernizuje pomaleji, produktivita i mzdy stagnují.</span></div></li>
         <li><span class="rn">2</span><div><b>Snižuje mzdy a produktivitu</b><span>S rostoucím podílem mimoevropských pracovníků klesá produktivita, mzdy i tržby na zaměstnance. Firmám se nevyplatí zvyšovat platy ani se zlepšovat – levná práce jim to nahradí.</span></div></li>
         <li><span class="rn">3</span><div><b>Vytlačuje české dělníky z práce</b><span>Levní cizinci vytlačují české dělníky z nízkokvalifikovaných pozic; mzdy klesají. Ztráta práce znamená nižší životní šanci a vyšší závislost na dávkách.</span></div></li>
         <li><span class="rn">4</span><div><b>Prodražuje bydlení</b><span>Migranti zvyšují poptávku po bydlení rychleji, než roste nabídka. V Dánsku je imigrace za 62–88&nbsp;% růstu cen bydlení od roku 1999. Dražší bydlení znamená, že mladí Češi si hůř zakládají rodinu a déle zůstávají závislí na rodičích.</span></div></li>
-        <li><span class="rn">5</span><div><b>Vytlačuje domácí z měst</b><span>Migrace směřuje do měst s nejvyšší produktivitou. Domácí se pod tlakem cen stěhují pryč – dál od práce, za nižší mzdy, s dojížděním. V Londýně dnes tvoří bílí Britové jen 36,8&nbsp;% obyvatel. Postižení se navíc odečtou ze statistiky, takže se škoda v datech „nevidí“.</span></div></li>
+        <li><span class="rn">5</span><div><b>Vytlačuje domácí z měst</b><span>Migrace směřuje do měst s nejvyšší produktivitou. Domácí se pod tlakem cen stěhují pryč – dál od práce, za nižší mzdy, s dojížděním. V Londýně dnes tvoří etničtí Britové jen 36,8&nbsp;% obyvatel. Postižení se navíc odečtou ze statistiky, takže se škoda v datech „nevidí“.</span></div></li>
         <li><span class="rn">6</span><div><b>Zvyšuje kriminalitu</b><span>Migranti mají v západní Evropě vyšší kriminalitu než domácí, i po zohlednění věku a pohlaví; vyšší míra přetrvává i ve druhé generaci. Kromě přímých obětí roste pocit nejistoty – necelá polovina Němců se dnes cítí na veřejných prostranstvích nejistě.</span></div></li>
-        <li><span class="rn">7</span><div><b>Zatěžuje rozpočet</b><span>Neevropští migranti přes celý život vyberou ze státní pokladny více, než do ní přinesou – platí se důchody, zdravotnictví, bydlení, děti. Krátkodobý přínos z odvodů je jako nevýhodná půjčka: první roky se to zdá výhodné, dlouhodobě to prodělává.</span></div></li>
+        <li><span class="rn">7</span><div><b>Zatěžuje rozpočet</b><span>Mnohé skupiny neevropských migrantů přes celý život vyberou ze státní pokladny více, než do ní přinesou – platí se důchody, zdravotnictví, bydlení, děti. Krátkodobý přínos z odvodů je jako nevýhodná půjčka: první roky se to zdá výhodné, dlouhodobě to prodělává.</span></div></li>
         <li><span class="rn">8</span><div><b>Odčerpává peníze z ekonomiky (remitence)</b><span>Migranti posílají část výdělků rodinám domů. Tyto peníze odcházejí z české ekonomiky – nefungují jako tuzemská spotřeba, investice ani důchodové odvody. V roce 2025 to bylo 55,1&nbsp;mld.&nbsp;Kč jen v běžných transferech domácností (více než trojnásobek oproti roku 2015).</span></div></li>
-        <li><span class="rn">9</span><div><b>Ničí společenskou důvěru</b><span>V etnicky smíšených komunitách lidé méně důvěřují sousedům (i těm vlastní rasy), méně se angažují, méně přispívají na charitu a stahují se do soukromí. Slabne sociální tkáň, dobrovolnictví i ochota platit za veřejné služby. Přidružený efekt: horší mentální zdraví lidí žijících mimo vlastní etnickou skupinu.</span></div></li>
+        <li><span class="rn">9</span><div><b>Ničí společenskou důvěru</b><span>V etnicky smíšených komunitách lidé méně důvěřují sousedům (i těm z vlastního etnika), méně se angažují, méně přispívají na charitu a stahují se do soukromí. Slabne sociální tkáň, dobrovolnictví i ochota platit za veřejné služby. Přidružený efekt: horší mentální zdraví lidí žijících mimo vlastní etnickou skupinu.</span></div></li>
         <li><span class="rn">10</span><div><b>Otevírá dveře špionáži</b><span>Země původu (Čína, Turecko, Indie, arabské státy) využívají své diaspory k politickému tlaku a špionáži – průmyslové, vědecké i vojenské. Čínští studenti na citlivých oborech jsou systematicky vedeni ke spolupráci se státem; rizikem je únik technologií a loajalita komunit vůči zemi původu místo vůči ČR.</span></div></li>
         <li><span class="rn">11</span><div><b>Kazí instituce</b><span>Etnická fragmentace koreluje s korupcí, vyšší regulací a slabším právním státem. Migranti si do nové země často přenášejí institucionální vzorce ze země původu („deep roots“). Pro Česko to je riziko zhoršení institucí vybudovaných po roce 1989: právního státu, nízké korupce a férového podnikání.</span></div></li>
         <li><span class="rn">12</span><div><b>Rozděluje společnost na etnické bloky</b><span>V multietnických společnostech se hlasuje podle etnika, nikoli podle zájmů a programu. Voliči hodnotí kandidáty vlastní etnicity výrazně lépe; z demokratických voleb se stává spíše sčítání lidu a politika se mění na etnický boj o moc.</span></div></li>

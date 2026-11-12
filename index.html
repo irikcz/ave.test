@@ -205,7 +205,7 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; 
 /* ===== Rizika ===== */
 .risks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0 48px; }
 .risks li { border-top: 2px solid var(--ink); padding-block: 16px; display: grid; grid-template-columns: 40px 1fr; gap: 10px; align-content: start; }
-.risks .rn { font-family: var(--f-pixel); font-weight: 900; font-variant-numeric: tabular-nums; font-size: 1.15rem; color: var(--red); line-height: 1.35; }
+.risks .rn, .side-list .rn { font-family: var(--f-pixel); font-weight: 900; font-variant-numeric: tabular-nums; font-size: 1.15rem; color: var(--red); line-height: 1.35; }
 .risks b { font-family: var(--f-display); font-weight: 700; font-size: 1.12rem; display: block; margin-bottom: 4px; }
 .risks span:not(.rn) { color: var(--muted); }
 
@@ -256,8 +256,10 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; 
 .side-lead { margin-top: 8px; color: var(--muted); max-width: 70ch; }
 .side-item { margin-top: 22px; padding-top: 18px; border-top: 2px solid var(--line); display: grid; gap: 10px; }
 .side-item h3 { font-size: 1.2rem; }
-.side-list { margin: 4px 0 0; padding-left: 1.4em; display: grid; gap: 10px; }
-.side-list ol { margin: 8px 0 0; padding-left: 1.4em; display: grid; gap: 6px; list-style: lower-alpha; }
+.side-list { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 0; }
+.side-list > li { display: grid; grid-template-columns: 40px 1fr; gap: 10px; padding-block: 14px; border-top: 2px solid var(--line); }
+.side-list > li > div { min-width: 0; }
+.side-list ol { margin: 10px 0 0; padding-left: 1.4em; display: grid; gap: 6px; list-style: lower-alpha; }
 @media (min-width: 760px) { .kostka { grid-template-columns: repeat(3, 1fr); gap: 32px; } }
 .example { background: var(--bg-alt); border: 2px dashed var(--line); padding: 12px 14px; font-size: .98rem; }
 .example b { font-family: var(--f-pixel); font-weight: 700; color: var(--blue); }
@@ -531,15 +533,15 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
             <h3>Strop pracovní migrace ukotvený v zákoně</h3>
             <p>V případě, že nebude realizován bod 1 naší petice, tj. úplné zastavení pracovní migrace z mimoevropských zemí, navrhujeme jako alternativu stanovit v zákoně o pobytu cizinců (č.&nbsp;326/1999&nbsp;Sb.) limit pro vydání povolení k pobytu za účelem zaměstnání na 5&nbsp;000 ročně. Do tohoto limitu se započítává následující: povolení k zaměstnání, zaměstnanecká karta, karta vnitropodnikově převedeného zaměstnance a modrá karta. Zavedení tohoto limitu dále podmiňujeme tímto:</p>
             <ol class="side-list">
-              <li>aby zaměstnavatel ručil za závazky svého zaměstnance ze země mimo EU, které vzniknou v době zaměstnání.</li>
-              <li>aby cizinci ze zemí mimo EU mohli být zaměstnáváni pouze na pozicích s vyšší než průměrnou mzdou, aby ze zahraničí přicházeli odborníci a nikoliv levná pracovní síla. Zpřísněním příjmových kriterií pro poptávanou pracovní sílu tak, aby pracovní povolení bylo možné vydat jen na pracovní pozici, která byla veřejně nabízena na Portálu práce MPSV nepřetržitě alespoň 3 měsíce, a která je nabízena za mzdu:
+              <li><span class="rn">1</span><div>aby zaměstnavatel ručil za závazky svého zaměstnance ze země mimo EU, které vzniknou v době zaměstnání.</div></li>
+              <li><span class="rn">2</span><div>aby cizinci ze zemí mimo EU mohli být zaměstnáváni pouze na pozicích s vyšší než průměrnou mzdou, aby ze zahraničí přicházeli odborníci a nikoliv levná pracovní síla. Zpřísněním příjmových kriterií pro poptávanou pracovní sílu tak, aby pracovní povolení bylo možné vydat jen na pracovní pozici, která byla veřejně nabízena na Portálu práce MPSV nepřetržitě alespoň 3 měsíce, a která je nabízena za mzdu:
                 <ol>
                   <li>která je nejméně o 50&nbsp;% vyšší než průměrná mzda v České republice, a</li>
                   <li>která je nejméně o 50&nbsp;% vyšší než průměrná mzda v daném kraji, a</li>
                   <li>která je nejméně o 50&nbsp;% vyšší než průměrná mzda v daném oboru a kraji.</li>
                 </ol>
-              </li>
-              <li>aby zaměstnavatel zaměstnávající cizince ze země mimo EU byl povinen zajišťovat rekvalifikaci alespoň jednoho občana České republiky nebo členského státu EU tak, aby danou pracovní pozici mohl v budoucnu obsadit.</li>
+              </div></li>
+              <li><span class="rn">3</span><div>aby zaměstnavatel zaměstnávající cizince ze země mimo EU byl povinen zajišťovat rekvalifikaci alespoň jednoho občana České republiky nebo členského státu EU tak, aby danou pracovní pozici mohl v budoucnu obsadit.</div></li>
             </ol>
           </div>
         </div>

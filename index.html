@@ -221,7 +221,7 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; 
 .problem .text { display: grid; gap: 14px; min-width: 0; }
 .facts { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
 .facts li { border-left: 4px solid var(--red); padding-left: 14px; }
-.press { margin-top: 8px; display: grid; gap: 10px; }
+.press { display: grid; gap: 12px; align-content: start; }
 .press h3 { font-size: 1.1rem; }
 .press ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .press li { display: grid; gap: 2px; padding-left: 14px; border-left: 4px solid var(--blue); }
@@ -448,7 +448,8 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
         <h2>Vláda zvyšuje dovoz cizinců do naší země</h2>
         <p>Vláda Andreje Babiše realizuje plány ANO na zvýšení dovozu zahraničních pracovníků. Ministerstvo průmyslu chystá rychlejší povolování a vyšší kvóty pro konkrétní mimoevropské země. O počtech přitom nehlasuje Sněmovna, kvóty mění vláda vlastním nařízením.</p>
         <p>Chápeme, že firmám chybějí lidé. Řešením ale není levná práce z druhého konce světa, ale lepší využití lidí, kteří už tu žijí, automatizace a spolupráce v rámci Evropy.</p>
-        <div class="press">
+      </div>
+      <div class="press">
           <h3>Píší o tom média</h3>
           <ul>
             <li><a href="https://ct24.ceskatelevize.cz/clanek/domaci/vlada-zvysi-kvoty-pro-pracovniky-z-filipin-a-indie-uvedl-havlicek-378627" target="_blank" rel="noopener">Vláda zvýší kvóty pro pracovníky z Filipín a Indie, uvedl Havlíček</a><small>ČT24 · 15. 10. 2026</small></li>
@@ -456,13 +457,6 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
             <li><a href="https://www.seznamzpravy.cz/clanek/ekonomika-firmy-ano-chce-privest-firmam-100-tisic-cizincu-cesko-jich-ale-potrebuje-mnohem-vic-288564" target="_blank" rel="noopener">ANO chce přivést firmám 100 tisíc cizinců. Česko jich ale potřebuje mnohem víc</a><small>Seznam Zprávy · 8. 10. 2025</small></li>
           </ul>
         </div>
-      </div>
-      <ul class="facts">
-        <li>Hospodářská strategie vlády počítá se zvýšením počtu zahraničních pracovníků v ekonomice.</li>
-        <li>Ministr práce Aleš Juchelka: vláda se snaží navyšovat kvóty pro zahraniční pracovníky.</li>
-        <li>Od 1. 7. 2026 vyšší kvóty na velvyslanectvích v Manile a Taškentu.</li>
-        <li>V říjnu vláda připravuje další navýšení kvót, mimo jiné pro Filipíny, a zrychlení povolení.</li>
-      </ul>
     </div>
   </section>
 
@@ -474,7 +468,8 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: cent
       </div>
       <ol class="risks">
         <li><span class="rn">1</span><div><b>Brzdí modernizaci</b><span>Firmy místo investic do strojů a automatizace kupují levnou lidskou práci. Ekonomika se modernizuje pomaleji, produktivita i mzdy stagnují. Historické potvrzení: po vyloučení mexických dělníků v USA (1964) farmy okamžitě masivně mechanizovaly sklizeň.</span></div></li>
-        <li><span class="rn">2–3</span><div><b>Produktivita a vytlačování zaměstnanců</b><span>Levní cizinci vytlačují české dělníky z práce; mzdy na těchto pozicích klesají. S rostoucím podílem mimoevropských pracovníků klesá produktivita, mzdy i tržby na zaměstnance. Ztráta práce znamená nižší životní šanci a vyšší závislost na dávkách.</span></div></li>
+        <li><span class="rn">2</span><div><b>Snižuje mzdy a produktivitu</b><span>S rostoucím podílem mimoevropských pracovníků klesá produktivita, mzdy i tržby na zaměstnance. Firmám se nevyplatí zvyšovat platy ani se zlepšovat – levná práce jim to nahradí.</span></div></li>
+        <li><span class="rn">3</span><div><b>Vytlačuje české dělníky z práce</b><span>Levní cizinci vytlačují české dělníky z nízkokvalifikovaných pozic; mzdy klesají. Ztráta práce znamená nižší životní šanci a vyšší závislost na dávkách.</span></div></li>
         <li><span class="rn">4</span><div><b>Prodražuje bydlení</b><span>Migranti zvyšují poptávku po bydlení rychleji, než roste nabídka. V Dánsku je imigrace za 62–88&nbsp;% růstu cen bydlení od roku 1999. Dražší bydlení znamená, že mladí Češi si hůř zakládají rodinu a déle zůstávají závislí na rodičích.</span></div></li>
         <li><span class="rn">5</span><div><b>Vytlačuje domácí z měst</b><span>Migrace směřuje do měst s nejvyšší produktivitou. Domácí se pod tlakem cen stěhují pryč – dál od práce, za nižší mzdy, s dojížděním. V Londýně dnes tvoří bílí Britové jen 36,8&nbsp;% obyvatel. Postižení se navíc odečtou ze statistiky, takže se škoda v datech „nevidí“.</span></div></li>
         <li><span class="rn">6</span><div><b>Zvyšuje kriminalitu</b><span>Migranti mají v západní Evropě vyšší kriminalitu než domácí, i po zohlednění věku a pohlaví; vyšší míra přetrvává i ve druhé generaci. Kromě přímých obětí roste pocit nejistoty – necelá polovina Němců se dnes cítí na veřejných prostranstvích nejistě.</span></div></li>
